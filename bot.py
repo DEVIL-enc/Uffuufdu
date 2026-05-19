@@ -95,13 +95,13 @@ def bs(text):
 # ====================== CONFIG ======================
 API_ID = int(os.getenv("API_ID", ""))
 API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", ")
-ADMIN_ID = json.loads(os.getenv("ADMIN_ID", "[]"))
-HIT_CHANNEL_ID = int(os.getenv("HIT_CHANNEL_ID", ""))
-JOIN_GROUP_ID = int(os.getenv("JOIN_GROUP_ID", ""))
-JOIN_CHANNEL_ID = int(os.getenv("JOIN_CHANNEL_ID", ""))
-JOIN_GROUP_LINK = os.getenv("JOIN_GROUP_LINK", "")
-JOIN_CHANNEL_LINK = os.getenv("JOIN_CHANNEL_LINK", "")
+BOT_TOKEN = os.getenv("8808007208:AAFfvIsUNbVf_bsXaBl34PAz6NL4ttL0STU", ")
+ADMIN_ID = json.loads(os.getenv("1707478010", "[]"))
+HIT_CHANNEL_ID = int(os.getenv("5298202986", ""))
+JOIN_GROUP_ID = int(os.getenv("5298202986", ""))
+JOIN_CHANNEL_ID = int(os.getenv("-1002144296199", ""))
+JOIN_GROUP_LINK = os.getenv("5298202986", "")
+JOIN_CHANNEL_LINK = os.getenv("https://t.me/D3v1l_vip1", "")
 FORCE_JOIN_IMAGES = [
     "",
     ""
