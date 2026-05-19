@@ -4,8 +4,12 @@ import datetime
 from motor.motor_asyncio import AsyncIOMotorClient
 
 # MongoDB Connection
-MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017")
-DB_NAME = os.getenv("DB_NAME", "razor_x_bot")
+MONGO_URL = os.getenv(
+    "MONGO_URL",
+    "mongodb+srv://mhmdywtywb23_db_user:r1BB3ppIogKfxu7E@devilchk.k83fa1a.mongodb.net/?appName=Devilchk"
+)
+
+DB_NAME = os.getenv("DB_NAME", "Devilchk")
 
 client = AsyncIOMotorClient(MONGO_URL)
 db = client[DB_NAME]
