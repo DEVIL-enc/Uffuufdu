@@ -93,8 +93,8 @@ def bs(text):
 
 
 # ====================== CONFIG ======================
-API_ID = int(os.getenv("API_ID", "0"))
-API_HASH = os.getenv("API_HASH", "0")
+API_ID = int(os.getenv("API_ID", "39825025"))
+API_HASH = os.getenv("API_HASH", "47170fd9a11b3f591bbc56849519f0f8")
 BOT_TOKEN = os.getenv("BOT_TOKEN","8808007208:AAFfvIsUNbVf_bsXaBl34PAz6NL4ttL0STU")
 ADMIN_ID = json.loads(os.getenv("ADMIN_ID", "[1707478010]"))
 HIT_CHANNEL_ID = int(os.getenv("HIT_CHANNEL_ID", "-5298202986"))
