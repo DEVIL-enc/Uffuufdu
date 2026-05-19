@@ -93,15 +93,15 @@ def bs(text):
 
 
 # ====================== CONFIG ======================
-API_ID = int(os.getenv(""))
-API_HASH = os.getenv("")
-BOT_TOKEN = os.getenv("8808007208:AAFfvIsUNbVf_bsXaBl34PAz6NL4ttL0STU")
-ADMIN_ID = json.loads(os.getenv("1707478010"))
-HIT_CHANNEL_ID = int(os.getenv("-5298202986"))
-JOIN_GROUP_ID = int(os.getenv("-5298202986"))
-JOIN_CHANNEL_ID = int(os.getenv("-1002144296199"))
-JOIN_GROUP_LINK = os.getenv("-5298202986")
-JOIN_CHANNEL_LINK = os.getenv("https://t.me/D3v1l_vip1")
+API_ID = int(os.getenv("API_ID", "0"))
+API_HASH = os.getenv("API_HASH", "0")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8808007208:AAFfvIsUNbVf_bsXaBl34PAz6NL4ttL0STU")
+ADMIN_ID = json.loads(os.getenv("ADMIN_ID", "[1707478010]"))
+HIT_CHANNEL_ID = int(os.getenv("HIT_CHANNEL_ID", "-5298202986"))
+JOIN_GROUP_ID = int(os.getenv("JOIN_GROUP_ID", "-5298202986"))
+JOIN_CHANNEL_ID = int(os.getenv("JOIN_CHANNEL_ID", "-1002144296199"))
+JOIN_GROUP_LINK = os.getenv("JOIN_GROUP_LINK", "https://t.me/+tyhJcyfsD0MwYTFk")
+JOIN_CHANNEL_LINK = os.getenv("JOIN_CHANNEL_LINK", "https://t.me/D3v1l_vip1")
 FORCE_JOIN_IMAGES = [
     "",
     ""
