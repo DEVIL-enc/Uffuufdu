@@ -290,3 +290,7 @@ async def save_card_to_db(card_data: dict):
         **card_data,
         "created_at": datetime.datetime.utcnow()
     })
+
+async def get_total_cards_count() -> int:
+    """Get total checked cards count"""
+    return await cards_col.count_documents({})
