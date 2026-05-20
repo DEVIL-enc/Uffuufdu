@@ -897,8 +897,8 @@ async def get_bin_info(cn):
     except:
         return {"brand": "-", "type": "-", "level": "-", "bank": "-", "country": "-", "flag": "🏳️"}
 
-
 # ====================== SHOPIFY API ======================
+
 def build_api_url(site, cc, proxy_data=None):
     if not site.startswith('http'):
         site = f'https://{site}'
@@ -906,8 +906,17 @@ def build_api_url(site, cc, proxy_data=None):
     url = f'{API_BASE_URL}/?url={quote(site, safe="")}'
 
     if proxy_data:
-        proxy_url = proxy_data.get("proxy_url", "")
-        url += f'&proxy={quote(proxy_url, safe="")}'
+        ip = proxy_data.get('ip')
+        port = proxy_data.get('port')
+        username = proxy_data.get('username')
+        password = proxy_data.get('password')
+
+        if username and password:
+            proxy = f"{ip}:{port}:{username}:{password}"
+        else:
+            proxy = f"{ip}:{port}"
+
+        url += f'&proxy={quote(proxy, safe="")}'
 
     return url
 
