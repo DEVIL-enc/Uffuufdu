@@ -95,7 +95,7 @@ def bs(text):
 # ====================== CONFIG ======================
 API_ID = int(os.getenv("API_ID", "39825025"))
 API_HASH = os.getenv("API_HASH", "47170fd9a11b3f591bbc56849519f0f8")
-BOT_TOKEN = os.getenv("BOT_TOKEN","8808007208:AAFfvIsUNbVf_bsXaBl34PAz6NL4ttL0STU")
+BOT_TOKEN = os.getenv("BOT_TOKEN","8808007208:AAH9DsA-lRIimPviJjY9b8-TrADhHQIbHiU")
 ADMIN_ID = json.loads(os.getenv("ADMIN_ID", "[1707478010]"))
 HIT_CHANNEL_ID = int(os.getenv("HIT_CHANNEL_ID", "-5298202986"))
 JOIN_GROUP_ID = int(os.getenv("JOIN_GROUP_ID", "-5298202986"))
@@ -106,7 +106,7 @@ FORCE_JOIN_IMAGES = [
     "",
     ""
 ]
-API_BASE_URL = os.getenv("API_BASE_URL", "https://web-production-e6929.up.railway.app/shopify")
+API_BASE_URL = os.getenv("API_BASE_URL", "http://187.124.1.150:8081")
 RAZORPAY_API_URL = os.getenv("RAZORPAY_API_URL", "https://rz.rcvan.indevs.in/rz")
 BOT_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
